@@ -74,4 +74,20 @@ text-align: left;
 
 th {
 background-color: #f2f2f2;
+
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+  }
+
+  th {
+    background: #f0f0f0;
+    font-weight: bold;
+  }
 }
