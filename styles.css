@@ -175,3 +175,41 @@ footer {
   object-fit: cover;
 }
 
+/* Banner Header */
+.banner-header {
+  background-image: url('about.jpg'); /* change per page */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+  color: white;
+
+  position: relative;
+}
+
+/* Optional: dark overlay for readability */
+.banner-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  z-index: 0;
+}
+
+.banner-header * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo inside banner */
+.banner-header .site-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
